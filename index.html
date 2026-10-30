@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore how art appears in everyday life through a colorful, interactive learning gallery.">
+  <title>ART IN EVERYDAY LIFE | Learning Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement"><span class="spark">✳</span> A little creativity makes ordinary days extraordinary <span class="spark">✳</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Art in Everyday Life home">
+      <span class="brand-mark">a<span>✳</span></span>
+      <span><strong>ART IN EVERYDAY LIFE</strong><small>THE EVERYDAY IS A MASTERPIECE</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a class="active" href="#home">Home</a>
+      <a href="#discover">Discover</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#artists">Artists</a>
+      <a href="#quiz">Mini quiz</a>
+    </nav>
+    <a class="header-cta" href="#discover">Start exploring <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> YOUR CREATIVE WORLD STARTS HERE</div>
+        <h1>Art is not just in museums. <em>It's everywhere.</em></h1>
+        <p>From the clothes we wear to the places we live, discover how art adds meaning, beauty, and imagination to everyday life.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#discover">Explore the lesson <span>↗</span></a>
+          <a class="text-link" href="#gallery">View the gallery <span>→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✳</span><span><strong>LOOK CLOSER.</strong><br>There is art all around you.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Colorful abstract art collage">
+        <div class="art-orbit"></div>
+        <div class="hero-photo"></div>
+        <div class="floating-card card-one"><span>01 / NOTICE</span><strong>Find beauty<br>in the ordinary.</strong></div>
+        <div class="floating-card card-two"><span>CREATIVITY IS</span><strong>Everywhere <b>✳</b></strong></div>
+        <div class="scribble">✳</div>
+        <div class="hero-caption">A WORLD FULL OF IDEAS <span>↗</span></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO DISCOVER</span><span class="scroll-line"></span><span>01 — 05</span></div>
+    </section>
+
+    <section class="intro section-pad" id="discover">
+      <div class="section-kicker">01 / THE BIG IDEA</div>
+      <div class="intro-grid">
+        <h2>Art is a part of<br><em>being human.</em></h2>
+        <div class="intro-text"><p>Art is a way of expressing ideas, emotions, beliefs, and experiences. It can be something we create, something we use, or something we see around us.</p><p>Look beyond frames and galleries. The design of a chair, a colorful meal, a song, or a carefully decorated room can all be forms of art.</p><span class="handwritten">Keep your eyes open. <b>✳</b></span></div>
+      </div>
+      <div class="fact-strip"><div><strong>01</strong><span>Art helps us<br>communicate.</span></div><div><strong>02</strong><span>Art reflects<br>our culture.</span></div><div><strong>03</strong><span>Art inspires<br>new ideas.</span></div><div><strong>04</strong><span>Art makes life<br>more meaningful.</span></div></div>
+    </section>
+
+    <section class="categories section-pad" id="gallery">
+      <div class="section-heading">
+        <div><div class="section-kicker">02 / ART IN ACTION</div><h2>Where do we find <em>art?</em></h2></div>
+        <p>Choose a category and explore the creative details hiding in plain sight.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filter art categories">
+        <button class="filter-btn selected" data-filter="all">All around us <span>06</span></button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="culture">Culture</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+      </div>
+      <div class="gallery-grid">
+        <article class="gallery-card tall" data-category="design">
+          <div class="gallery-image image-fashion"><span class="image-number">01</span><span class="image-tag">DESIGN</span></div>
+          <div class="card-copy"><div><h3>Fashion &amp; Style</h3><p>Clothing, patterns, and accessories express identity and creativity.</p></div><button class="round-arrow learn-more" data-title="Fashion & Style" data-description="Fashion is a wearable art form. Designers combine color, line, texture, shape, and pattern to communicate personality, culture, and ideas. Even the way you put an outfit together can be a creative choice." data-example="Look at the colors, fabric, silhouette, and pattern of what you are wearing today.">↗</button></div>
+        </article>
+        <article class="gallery-card" data-category="design">
+          <div class="gallery-image image-architecture"><span class="image-number">02</span><span class="image-tag">DESIGN</span></div>
+          <div class="card-copy"><div><h3>Architecture</h3><p>Buildings combine function, structure, and visual beauty.</p></div><button class="round-arrow learn-more" data-title="Architecture" data-description="Architecture is the art and practice of designing buildings and spaces. Architects think about form, proportion, materials, light, and how people will use a place." data-example="Notice the shape of a doorway, the pattern of a floor, or the way sunlight enters a room.">↗</button></div>
+        </article>
+        <article class="gallery-card" data-category="culture">
+          <div class="gallery-image image-food"><span class="image-number">03</span><span class="image-tag">CULTURE</span></div>
+          <div class="card-copy"><div><h3>Food &amp; Presentation</h3><p>A meal can be a composition of color, texture, and form.</p></div><button class="round-arrow learn-more" data-title="Food & Presentation" data-description="Food presentation uses artistic principles to make meals inviting. Chefs arrange colors, shapes, textures, and space just as an artist arranges elements on a canvas." data-example="Think about how a fruit plate or a beautifully arranged local dish uses color and balance.">↗</button></div>
+        </article>
+        <article class="gallery-card" data-category="culture">
+          <div class="gallery-image image-craft"><span class="image-number">04</span><span class="image-tag">CULTURE</span></div>
+          <div class="card-copy"><div><h3>Crafts &amp; Traditions</h3><p>Handmade objects preserve stories, skills, and heritage.</p></div><button class="round-arrow learn-more" data-title="Crafts & Traditions" data-description="Traditional crafts carry knowledge from one generation to another. Weaving, pottery, carving, embroidery, and other handmade practices show both artistic skill and cultural identity." data-example="Explore Filipino examples such as inabel weaving, capiz craft, okir designs, and pottery.">↗</button></div>
+        </article>
+        <article class="gallery-card" data-category="nature">
+          <div class="gallery-image image-nature"><span class="image-number">05</span><span class="image-tag">NATURE</span></div>
+          <div class="card-copy"><div><h3>Nature &amp; Patterns</h3><p>Natural forms inspire shapes, colors, and repeating patterns.</p></div><button class="round-arrow learn-more" data-title="Nature & Patterns" data-description="Nature offers endless inspiration: the symmetry of leaves, spirals of shells, colors of sunsets, and patterns on butterfly wings. Artists often study these forms and reinterpret them." data-example="Find repetition, contrast, balance, and texture in a plant, cloud, or seashell.">↗</button></div>
+        </article>
+        <article class="gallery-card" data-category="design">
+          <div class="gallery-image image-interior"><span class="image-number">06</span><span class="image-tag">DESIGN</span></div>
+          <div class="card-copy"><div><h3>Spaces &amp; Interiors</h3><p>Our surroundings are shaped by color, lighting, and objects.</p></div><button class="round-arrow learn-more" data-title="Spaces & Interiors" data-description="Interior design makes indoor spaces useful, comfortable, and expressive. Furniture, lighting, color palettes, and decoration work together to create a mood and support daily activities." data-example="Compare how a classroom, bedroom, or café feels because of its colors, furniture, and lighting.">↗</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-shape">“</div>
+      <p>Art enables us to find ourselves<br>and lose ourselves at the same time.</p>
+      <span>— THOMAS MERTON</span>
+      <div class="quote-flower">✳</div>
+    </section>
+
+    <section class="artists section-pad" id="artists">
+      <div class="section-heading">
+        <div><div class="section-kicker">03 / CREATIVE INSPIRATION</div><h2>Meet the <em>makers.</em></h2></div>
+        <p>Artists and makers help us see the world in new ways. Here are a few creative voices to explore.</p>
+      </div>
+      <div class="artist-grid">
+        <article class="artist-card"><div class="artist-image artist-one"></div><div class="artist-meta"><span>PHILIPPINES</span><span>VISUAL ART</span></div><h3>Fernando Amorsolo</h3><p>Known for luminous rural scenes and depictions of Filipino life.</p></article>
+        <article class="artist-card"><div class="artist-image artist-two"></div><div class="artist-meta"><span>PHILIPPINES</span><span>SCULPTURE</span></div><h3>Napoleon Abueva</h3><p>A pioneering modern sculptor who explored form and materials.</p></article>
+        <article class="artist-card"><div class="artist-image artist-three"></div><div class="artist-meta"><span>PHILIPPINES</span><span>WEAVING</span></div><h3>Filipino Artisans</h3><p>Communities keep traditional weaving and craft knowledge alive.</p></article>
+      </div>
+      <p class="artist-note">Learning note: The images above are visual inspirations, not portraits of the named artists.</p>
+    </section>
+
+    <section class="activity-section" id="quiz">
+      <div class="activity-art"><div class="activity-sticker">YOUR<br>TURN!<br>✳</div><div class="activity-photo"></div></div>
+      <div class="activity-copy">
+        <div class="section-kicker">04 / CHECK WHAT YOU KNOW</div>
+        <h2>Become an <em>art detective.</em></h2>
+        <p>Test your understanding with a quick question. There are no grades here—just curiosity!</p>
+        <div class="quiz-box">
+          <div class="quiz-progress"><span>QUICK QUIZ</span><span id="quizCount">QUESTION 1 OF 3</span></div>
+          <h3 id="question">Which of these can be considered art in everyday life?</h3>
+          <div id="answers" class="answers">
+            <button class="answer" data-answer="a">A. A thoughtfully designed outfit</button>
+            <button class="answer" data-answer="b">B. A decorated building</button>
+            <button class="answer" data-answer="c">C. Both A and B</button>
+          </div>
+          <p id="feedback" class="feedback" aria-live="polite">Choose an answer to see if you're right.</p>
+          <button id="nextQuestion" class="button button-dark next-btn" disabled>Next question →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="takeaway section-pad">
+      <div class="section-kicker">05 / TAKE IT WITH YOU</div>
+      <h2>Make today a little<br><em>more creative.</em></h2>
+      <p>Before you go, find one example of art in your home, school, or community. Ask yourself: what makes it meaningful?</p>
+      <a class="button button-light" href="#home">Back to the beginning ↑</a>
+      <div class="takeaway-doodle">✳</div>
+    </section>
+  </main>
+
+  <footer><a class="footer-brand" href="#home">ART IN EVERYDAY LIFE <span>✳</span></a><p>An educational learning gallery · Made for curious minds</p><a href="#home">BACK TO TOP ↑</a></footer>
+
+  <div class="modal" id="learnModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="section-kicker">LOOK CLOSER / LEARN MORE</div>
+      <h2 id="modalTitle">Art category</h2>
+      <p id="modalDescription"></p>
+      <div class="example-box"><strong>TRY THIS</strong><p id="modalExample"></p></div>
+      <button class="button button-dark" id="modalDone">Got it!</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
